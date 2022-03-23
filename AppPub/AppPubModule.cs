@@ -21,13 +21,13 @@ namespace AppPub
             Configure<AbpAzureEventBusOptions>(options =>
             {
                 options.ConnectionName = "Default";
-                options.SubscriberName = "ABP.AzureEventBusPub";
-                options.TopicName = "ABP.AzureEventBus";
+                options.SubscriberName = "<SubscriberName>";
+                options.TopicName = "<TopicName>";
             });
 
             Configure<AbpAzureServiceBusOptions>(options =>
             {
-                options.Connections.Default.ConnectionString = "Endpoint=sb://sb-epson-poc-env01-sb01.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=10XDWQ6xhMKKfULK5JHZPu3bSZZ/f4qBQ74R6uGQKD4=";
+                options.Connections.Default.ConnectionString = "<ConnectionString>";
             });
         }
     }
